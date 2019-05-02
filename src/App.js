@@ -23,7 +23,7 @@ function App() {
 				<HomeCard
 					image="/images/time.jpg"
 					cardTitle="Schedule"
-					cardContent="Shedule the date and time to send query letter to agents."
+					cardContent="Shedule the date and time to send your query letters to agents."
 					icon="access_time"
 				/>
 			</div>
