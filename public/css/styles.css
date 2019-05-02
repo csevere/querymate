@@ -1,4 +1,59 @@
-.brand-logo {
-    font-size: 4em; 
+.grid-container{
+   
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr 10em); 
+    grid-template-rows: 25% 1fr 1fr; 
+    grid-row-gap: 3em;
 }
-  
+
+body{
+    background-color: #ffffffe6;
+}
+/* .item{
+    justify-self: center; 
+} */
+
+
+.grid-item-nav{
+    grid-column: 1/9;
+    grid-row: 1/2;
+}
+
+.grid-item-create{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.grid-item-schedule{
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.grid-item-inbox{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.grid-item-search{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.nav-wrapper{
+    height: 5em;
+}
+
+.brand-logo {
+    font-size: 3em; 
+    font-family: 'Pacifico', cursive;
+}
+
+pre{
+    border: 1px solid black;
+    background: black;
+    color: white;
+}
+
+.card .card-image .card-title{
+    font-weight: bolder;
+}
