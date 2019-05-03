@@ -1,0 +1,24 @@
+.body{
+    background-color: #ffffffe6;
+}
+
+.nav-wrapper{
+    height: 5em;
+}
+
+.brand-logo {
+    font-size: 3em; 
+    font-family: 'Pacifico', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+@import 'home'; 
+@import 'authcard'; 
+
+
+
+

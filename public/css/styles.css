@@ -1,71 +1,124 @@
-.grid-container{
-   
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr 1.5em); 
-    grid-template-rows: 25% 1fr 1fr; 
-    grid-row-gap: 1.25em;
+/* line 1, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-row-gap: 1.25em;
+  grid-template-areas: "nav" "letter" "schedule" "inbox" "search";
+}
+@media screen and (min-width: 767px) {
+  /* line 14, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+  .grid-auth-container .grid-auth-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter letter empty2" "empty3 schedule schedule empty4" "empty5 inbox inbox empty6" "empty7 search search empty8";
+  }
+}
+@media screen and (min-width: 801px) {
+  /* line 27, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+  .grid-auth-container .grid-auth-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter schedule empty2" "empty3 inbox search empty4";
+  }
+}
+/* line 37, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth {
+  grid-column: 3/6;
+  grid-row: 3/4;
+  margin-bottom: 12em;
 }
 
-body{
-    background-color: #ffffffe6;
+/* line 1, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-row-gap: 1.25em;
+  grid-template-areas: "nav" "letter" "schedule" "inbox" "search";
+  /*MEDIA QUERIES*/
+  /*CARDS*/
 }
+@media screen and (min-width: 767px) {
+  /* line 16, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+  .grid-container .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter letter empty2" "empty3 schedule schedule empty4" "empty5 inbox inbox empty6" "empty7 search search empty8";
+  }
+}
+@media screen and (min-width: 801px) {
+  /* line 29, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+  .grid-container .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter schedule empty2" "empty3 inbox search empty4";
+  }
+}
+/* line 39, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container .indicator {
+  left: 203px;
+  right: 0px;
+}
+/* line 45, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container .grid-item-create {
+  grid-area: letter;
+  justify-self: center;
+}
+/* line 50, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container .grid-item-schedule {
+  grid-area: schedule;
+  justify-self: center;
+}
+/* line 55, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container .grid-item-inbox {
+  grid-area: inbox;
+  justify-self: center;
+}
+/* line 60, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container .grid-item-search {
+  grid-area: search;
+  justify-self: center;
+}
+/* line 65, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container pre {
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+/* line 71, /Users/carlita/Desktop/querymate/compass/sass/_home.scss */
+.grid-container .card .card-image .card-title {
+  font-weight: bolder;
+}
+
 /* .item{
     justify-self: center; 
 } 
-
 .grid-item-nav{
     grid-column: 1/9;
     grid-row: 1/2;
 }
-
 */
-
-.grid-item-auth{
-    grid-column: 3/6;
-    grid-row: 3/4; 
-    margin-bottom: 12em;
+/* line 4, /Users/carlita/Desktop/querymate/compass/sass/styles.scss */
+.body {
+  background-color: #ffffffe6;
 }
 
-.indicator{
-    left: 203px; 
-    right: 0px;
+/* line 8, /Users/carlita/Desktop/querymate/compass/sass/styles.scss */
+.nav-wrapper {
+  height: 5em;
 }
 
-.grid-item-create{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.grid-item-schedule{
-    grid-column: 5/6;
-    grid-row: 2/3;
-}
-
-.grid-item-inbox{
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
-.grid-item-search{
-    grid-column: 5/6;
-    grid-row: 3/4;
-}
-
-.nav-wrapper{
-    height: 5em;
-}
-
+/* line 12, /Users/carlita/Desktop/querymate/compass/sass/styles.scss */
 .brand-logo {
-    font-size: 3em; 
-    font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
 }
 
-pre{
-    border: 1px solid black;
-    background: black;
-    color: white;
-}
-
-.card .card-image .card-title{
-    font-weight: bolder;
+/* line 17, /Users/carlita/Desktop/querymate/compass/sass/styles.scss */
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
 }

@@ -4,12 +4,27 @@ import React, {Component} from 'react';
 
 const AuthCard = (props) => {
     return(
-        <div className = "grid-container">
+        <div className = "grid-auth-container">
+
+            <div className="card grid-item-auth">
+                <nav>
+                    <div className="card-content card-nav">
+                        <div className="nav-wrapper">
+                            <ul className="left">
+                                <li><a className="waves-effect waves-teal btn-flat" href="/">LOGIN</a></li>
+                                <li><a className="waves-effect waves-teal btn-flat" href="/">SIGN UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div className="card-content"></div>
+                <div className="card-content"></div>
+                <div className="card-content"></div>
             
-            <a className="grid-item-auth btn-large waves-effect waves-light pink darken-4 white-text z-depth-4" href="/home">
-                Continue                
-                <i className="material-icons right">send</i>
-            </a>
+            </div>
+         
         </div>
     )
 }

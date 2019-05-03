@@ -1,0 +1,89 @@
+.grid-container{
+   display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: auto 1fr 1fr; 
+    grid-row-gap: 1.25em;
+    grid-template-areas: 
+        "nav"
+        "letter"
+        "schedule"
+        "inbox"
+        "search";
+
+
+    /*MEDIA QUERIES*/
+  @media screen and (min-width: 767px){
+    grid-template-columns: repeat(4, 1fr); 
+    grid-column-gap: 1.5em; 
+    grid-template-areas: 
+        "nav nav nav nav"
+        "empty1 letter letter empty2"
+        "empty3 schedule schedule empty4"
+        "empty5 inbox inbox empty6"
+        "empty7 search search empty8"; 
+    }
+
+    @media screen and (min-width: 801px){
+        grid-template-columns: repeat(4, 1fr); 
+        grid-column-gap: 1.5em; 
+        grid-template-areas: 
+            "nav nav nav nav"
+            "empty1 letter schedule empty2"
+            "empty3 inbox search empty4";   
+    }
+
+
+    .indicator{
+        left: 203px; 
+        right: 0px;
+    }
+    
+    /*CARDS*/
+    .grid-item-create{
+        grid-area: letter; 
+        justify-self: center; 
+    }
+    
+    .grid-item-schedule{
+        grid-area: schedule; 
+        justify-self: center; 
+    }
+    
+    .grid-item-inbox{
+        grid-area: inbox;
+        justify-self: center; 
+    }
+    
+    .grid-item-search{
+        grid-area: search; 
+        justify-self: center;
+    }
+    
+    .card{
+        .card-image{
+            .card-title{
+                font-weight: bolder; 
+            }
+        }
+    }
+
+    /*end of grid container*/
+}
+
+
+/* .item{
+    justify-self: center; 
+} 
+.grid-item-nav{
+    grid-column: 1/9;
+    grid-row: 1/2;
+}
+   pre{
+        border: 1px solid black;
+        background: black;
+        color: white;
+    }
+*/
+
+
+

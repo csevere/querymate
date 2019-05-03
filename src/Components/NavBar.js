@@ -5,7 +5,7 @@ const NavBar = (props) => {
         <div className = "navbar-fixed">
             <div className = "nav-wrapper pink darken-4 white-text z-depth-2">
                 <div className = "brand-logo center">
-                    {props.name} 
+                    <a className="nav-text" href="/">{props.name}</a> 
                 </div>
             </div>
         </div>

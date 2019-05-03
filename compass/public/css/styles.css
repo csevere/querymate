@@ -1,0 +1,124 @@
+/* line 1, ../../sass/styles.scss */
+.body {
+  background-color: #ffffffe6;
+}
+
+/* line 5, ../../sass/styles.scss */
+.nav-wrapper {
+  height: 5em;
+}
+
+/* line 9, ../../sass/styles.scss */
+.brand-logo {
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+}
+
+/* line 14, ../../sass/styles.scss */
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* line 1, ../../sass/_home.scss */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-row-gap: 1.25em;
+  grid-template-areas: "nav" "letter" "schedule" "inbox" "search";
+  /*MEDIA QUERIES*/
+  /*CARDS*/
+  /*end of grid container*/
+}
+@media screen and (min-width: 767px) {
+  /* line 1, ../../sass/_home.scss */
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter letter empty2" "empty3 schedule schedule empty4" "empty5 inbox inbox empty6" "empty7 search search empty8";
+  }
+}
+@media screen and (min-width: 801px) {
+  /* line 1, ../../sass/_home.scss */
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter schedule empty2" "empty3 inbox search empty4";
+  }
+}
+/* line 36, ../../sass/_home.scss */
+.grid-container .indicator {
+  left: 203px;
+  right: 0px;
+}
+/* line 42, ../../sass/_home.scss */
+.grid-container .grid-item-create {
+  grid-area: letter;
+  justify-self: center;
+}
+/* line 47, ../../sass/_home.scss */
+.grid-container .grid-item-schedule {
+  grid-area: schedule;
+  justify-self: center;
+}
+/* line 52, ../../sass/_home.scss */
+.grid-container .grid-item-inbox {
+  grid-area: inbox;
+  justify-self: center;
+}
+/* line 57, ../../sass/_home.scss */
+.grid-container .grid-item-search {
+  grid-area: search;
+  justify-self: center;
+}
+/* line 64, ../../sass/_home.scss */
+.grid-container .card .card-image .card-title {
+  font-weight: bolder;
+}
+
+/* .item{
+    justify-self: center; 
+} 
+.grid-item-nav{
+    grid-column: 1/9;
+    grid-row: 1/2;
+}
+   pre{
+        border: 1px solid black;
+        background: black;
+        color: white;
+    }
+*/
+/* line 1, ../../sass/_authcard.scss */
+.grid-auth-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-row-gap: 1.25em;
+  grid-template-areas: "nav" "letter" "schedule" "inbox" "search";
+}
+@media screen and (min-width: 767px) {
+  /* line 1, ../../sass/_authcard.scss */
+  .grid-auth-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter letter empty2" "empty3 schedule schedule empty4" "empty5 inbox inbox empty6" "empty7 search search empty8";
+  }
+}
+@media screen and (min-width: 801px) {
+  /* line 1, ../../sass/_authcard.scss */
+  .grid-auth-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5em;
+    grid-template-areas: "nav nav nav nav" "empty1 letter schedule empty2" "empty3 inbox search empty4";
+  }
+}
+/* line 33, ../../sass/_authcard.scss */
+.grid-auth-container .grid-item-auth {
+  grid-column: 3/6;
+  grid-row: 3/4;
+  margin-bottom: 12em;
+}
