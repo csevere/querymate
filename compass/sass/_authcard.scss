@@ -1,38 +1,42 @@
 .grid-auth-container{
     display: grid; 
-    grid-template-columns: repeat(1, 1fr); 
-    grid-template-rows: auto 1fr 1fr; 
-    grid-row-gap: 1.25em;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    grid-row-gap: 5em;
     grid-template-areas: 
-        "nav"
-        "letter"
-        "schedule"
-        "inbox"
-        "search";
+        "space"
+        "auth"
+        "auth";
 
     @media screen and (min-width: 767px){
         grid-template-columns: repeat(4, 1fr); 
-        grid-column-gap: 1.5em; 
+        grid-row-gap: 14em;
         grid-template-areas: 
             "nav nav nav nav"
-            "empty1 letter letter empty2"
-            "empty3 schedule schedule empty4"
-            "empty5 inbox inbox empty6"
-            "empty7 search search empty8";   
+            "empty7 auth auth empty8"
+            "empty9 auth auth empty10";  
     }
     
     @media screen and (min-width: 801px){
         grid-template-columns: repeat(4, 1fr); 
-        grid-column-gap: 1.5em; 
+        grid-row-gap: 0em;
+        grid-template-rows: repeat(3, 13em); 
         grid-template-areas: 
             "nav nav nav nav"
-            "empty1 letter schedule empty2"
-            "empty3 inbox search empty4";   
+            "empty7 auth auth empty8"
+            "empty9 auth auth empty10";     
     }
 
     .grid-item-auth{
-        grid-column: 3/6;
-        grid-row: 3/4; 
-        margin-bottom: 12em;
+        grid-area: auth; 
+        background-color: #505050; 
+        
+        .card-nav{
+            a{
+                color:white; 
+                font-weight: bolder; 
+            }
+        }
     }
+
 }

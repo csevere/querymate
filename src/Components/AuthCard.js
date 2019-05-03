@@ -7,16 +7,16 @@ const AuthCard = (props) => {
         <div className = "grid-auth-container">
 
             <div className="card grid-item-auth">
-                <nav>
-                    <div className="card-content card-nav">
+                <div className="card-content card-nav">
+                    <nav className="pink darken-4">
                         <div className="nav-wrapper">
-                            <ul className="left">
-                                <li><a className="waves-effect waves-teal btn-flat" href="/">LOGIN</a></li>
-                                <li><a className="waves-effect waves-teal btn-flat" href="/">SIGN UP</a></li>
+                            <ul className="left card-nav-text">
+                                <li><a className="waves-effect btn-flat" href="/">LOGIN</a></li>
+                                <li><a className="waves-effect btn-flat" href="/">SIGN UP</a></li>
                             </ul>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
 
 
                 <div className="card-content"></div>
