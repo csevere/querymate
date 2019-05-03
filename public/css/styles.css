@@ -99,6 +99,9 @@
 */
 /* line 1, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
 .grid-auth-container {
+  background: url("/images/flower.png");
+  background-repeat: no-repeat;
+  background-position: 15em;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -117,18 +120,82 @@
   /* line 1, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
   .grid-auth-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 0em;
-    grid-template-rows: repeat(3, 13em);
-    grid-template-areas: "nav nav nav nav" "empty7 auth auth empty8" "empty9 auth auth empty10";
+    grid-row-gap: 6em;
+    grid-template-rows: 25% repeat(2, 15em);
+    grid-template-areas: "nav nav nav nav" "empty7 empty8 auth auth" "empty9 empty10 auth auth";
   }
 }
-/* line 30, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+/* line 33, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
 .grid-auth-container .grid-item-auth {
   grid-area: auth;
   background-color: #505050;
+  opacity: 0.9;
+  justify-self: center;
 }
-/* line 35, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+/* line 40, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
 .grid-auth-container .grid-item-auth .card-nav a {
   color: white;
   font-weight: bolder;
+  font-size: 1em;
+}
+/* line 47, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-smedia-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 51, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-smedia-wrapper .card-smedia-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: bolder;
+  width: 13em;
+  margin: auto;
+}
+/* line 58, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-smedia-wrapper .card-smedia-btn .card-smedia-img {
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+  margin-bottom: -5px;
+}
+/* line 64, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-smedia-wrapper .card-smedia-btn .card-smedia-text {
+  font-size: 1em;
+}
+/* line 69, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-email-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: bolder;
+  color: white !important;
+}
+/* line 75, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-email-wrapper .input-field {
+  width: 45%;
+}
+/* line 77, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-email-wrapper .input-field input {
+  border-bottom: 1px solid white;
+}
+/* line 83, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .center {
+  color: gray;
+  padding-top: 1em;
+}
+/* line 88, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-submit-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 4em;
+}
+/* line 95, /Users/carlita/Desktop/querymate/compass/sass/_authcard.scss */
+.grid-auth-container .grid-item-auth .card-submit-wrapper .card-submit-btn {
+  font-weight: bolder;
+  display: block;
+  width: 75%;
 }

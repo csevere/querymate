@@ -1,4 +1,7 @@
 .grid-auth-container{
+    background: url("/images/flower.png"); 
+    background-repeat: no-repeat;
+    background-position: 15em;  
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: auto; 
@@ -19,24 +22,81 @@
     
     @media screen and (min-width: 801px){
         grid-template-columns: repeat(4, 1fr); 
-        grid-row-gap: 0em;
-        grid-template-rows: repeat(3, 13em); 
+        grid-row-gap: 6em; 
+        grid-template-rows: 25% repeat(2, 15em); 
         grid-template-areas: 
             "nav nav nav nav"
-            "empty7 auth auth empty8"
-            "empty9 auth auth empty10";     
+            "empty7 empty8 auth auth"
+            "empty9 empty10 auth auth";     
     }
 
     .grid-item-auth{
         grid-area: auth; 
         background-color: #505050; 
+        opacity: 0.9;
+        justify-self: center;  
         
         .card-nav{
             a{
                 color:white; 
                 font-weight: bolder; 
+                font-size:1em;
+            }
+        }
+
+        .card-smedia-wrapper{
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between; 
+            .card-smedia-btn{
+                display: flex;
+                flex-direction: row; 
+                justify-content: space-evenly;
+                font-weight: bolder;
+                width: 13em; 
+                margin: auto;
+                .card-smedia-img{
+                    width: 24px;
+                    height: 24px;
+                    padding: 1px;
+                    margin-bottom: -5px; 
+                }
+                .card-smedia-text{
+                    font-size: 1em; 
+                }
+            }
+        }
+        .card-email-wrapper{
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-evenly; 
+            font-weight: bolder; 
+            color: white !important; 
+            .input-field{
+                width: 45%;
+                input{
+                    border-bottom: 1px solid white; 
+                }
+            }
+        }
+
+        .center{
+            color: gray;
+            padding-top: 1em; 
+        }
+
+        .card-submit-wrapper{
+            display: flex;
+            flex-flow: row wrap; 
+            justify-content: space-evenly; 
+            align-items: flex-end; 
+            margin-top: 4em;
+
+            .card-submit-btn{
+                font-weight: bolder; 
+                display: block;
+                width: 75%;  
             }
         }
     }
-
 }
