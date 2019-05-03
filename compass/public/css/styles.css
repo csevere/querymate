@@ -9,12 +9,17 @@
 }
 
 /* line 9, ../../sass/styles.scss */
+.nav-text {
+  color: white !important;
+}
+
+/* line 13, ../../sass/styles.scss */
 .brand-logo {
   font-size: 3em;
   font-family: 'Pacifico', cursive;
 }
 
-/* line 14, ../../sass/styles.scss */
+/* line 18, ../../sass/styles.scss */
 ::-webkit-scrollbar {
   width: 0px;
   /* remove scrollbar space */
